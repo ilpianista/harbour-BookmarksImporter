@@ -4,6 +4,8 @@ A [Sailfish OS](https://sailfishos.org) application to import browser bookmarks
 from a Netscape-format HTML file (exported by desktop browsers such as Firefox)
 into the Sailfish browser's bookmark list.
 
+A backup of the existing bookmarks is stored to `~/.local/share/dev.scarpino/harbour-bookmarksimporter/backups/`.
+
 ## Install
 
 Install via [Chum](https://github.com/sailfishos-chum/main).
