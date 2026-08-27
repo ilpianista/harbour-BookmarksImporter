@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+  <defs><linearGradient id="bg0" gradientUnits="userSpaceOnUse" x1="73.19345955666557" y1="12.806540443334416" x2="12.80654044333442" y2="73.19345955666559"><stop offset="0%" stop-color="#e01b24"/><stop offset="100%" stop-color="#f66151"/></linearGradient><clipPath id="clip"><path d="M0.29999999999999716 0.29999999999999716 L43 0.29999999999999716 A42.7 42.7 0 0 1 85.7 43 L85.7 43 A42.7 42.7 0 0 1 43 85.7 L0.29999999999999716 85.7 L0.29999999999999716 0.29999999999999716 Z"/></clipPath></defs>
+  <path d="M0.29999999999999716 0.29999999999999716 L43 0.29999999999999716 A42.7 42.7 0 0 1 85.7 43 L85.7 43 A42.7 42.7 0 0 1 43 85.7 L0.29999999999999716 85.7 L0.29999999999999716 0.29999999999999716 Z" fill="url(#bg0)"/><g clip-path="url(#clip)"><text x="43" y="43" font-size="40" text-anchor="middle" dominant-baseline="central" font-family='"Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif'>🌟</text></g>
+</svg>

@@ -1,0 +1,51 @@
+name: SailfishOS build
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - master
+
+env:
+  RELEASE: 5.0.0.43
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        arch: ['armv7hl', 'aarch64', 'i486']
+
+    steps:
+    - uses: actions/checkout@v5
+
+    - name: Build ${{ matrix.arch }}
+      uses: coderus/github-sfos-build@sfos5
+      with:
+        release: ${{ env.RELEASE }}
+        arch: ${{ matrix.arch }}
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v5
+      with:
+        name: rpms-${{ matrix.arch }}
+        path: RPMS
+
+    - name: Create release
+      if: contains(github.ref, 'release')
+      run: |
+        set -x
+        assets=()
+        for asset in RPMS/*.rpm; do
+          assets+=("-a" "$asset")
+        done
+        tag_name="${GITHUB_REF##*/}"
+        hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
