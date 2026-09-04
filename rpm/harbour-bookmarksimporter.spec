@@ -28,7 +28,7 @@ Custom:
   Repo: https://github.com/ilpianista/harbour-bookmarksimporter
 Icon: https://raw.githubusercontent.com/ilpianista/harbour-bookmarksimporter/master/icons/harbour-bookmarksimporter.svg
 Screenshots:
- - https://raw.githubusercontent.com/ilpianista/harbour-SailHN/master/screenshots/screenshot_1.png
+ - https://raw.githubusercontent.com/ilpianista/harbour-bookmarksimporter/master/screenshots/screenshot_1.png
 Links:
   Homepage: https://github.com/ilpianista/harbour-bookmarksimporter
   Bugtracker: https://github.com/ilpianista/harbour-bookmarksimporter/issues
