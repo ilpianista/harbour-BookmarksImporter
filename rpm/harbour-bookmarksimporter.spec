@@ -26,7 +26,7 @@ Categories:
  - Network
 Custom:
   Repo: https://github.com/ilpianista/harbour-bookmarksimporter
-Icon: https://raw.githubusercontent.com/ilpianista/harbour-bookmarksimporter/master/icons/harbour-bookmarksimporter.svg
+PackageIcon: https://raw.githubusercontent.com/ilpianista/harbour-bookmarksimporter/master/icons/harbour-bookmarksimporter.svg
 Screenshots:
  - https://raw.githubusercontent.com/ilpianista/harbour-bookmarksimporter/master/screenshots/screenshot_1.png
 Links:
